@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div>
-        wsup nigga?
+        wsup nigga?(✿◕‿◕✿)
       </div>
       <Button>
         hit me😋
