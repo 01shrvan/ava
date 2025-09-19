@@ -17,6 +17,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { checkUser } from "@/lib/checkUser";
+import Image from "next/image";
 
 export default async function Header() {
   await checkUser();
@@ -25,9 +26,14 @@ export default async function Header() {
     <header className="sticky top-4 z-50">
       <nav className="mx-auto w-[95%] md:w-[85%] lg:w-[95%] rounded-xl border bg-background/80 backdrop-blur-md shadow-lg supports-[backdrop-filter]:bg-background/60 px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <span className="text-3xl font-bold tracking-tight text-primary py-1">
-            ava
-          </span>
+          <Image
+            src={"/logo.png"}
+            alt="ava logo"
+            width={400}
+            height={200}
+            className="h-40 w-auto object-contain py-1 -ml-5"
+          />
+
         </Link>
 
         <div className="flex items-center space-x-2 md:space-x-4">
