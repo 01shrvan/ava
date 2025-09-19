@@ -4,21 +4,21 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
-// import { dark } from "@clerk/themes";
+import { dark } from "@clerk/themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "ava - ai career coach",
+  title: "AI Career Coach",
   description: "",
 };
 
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider
-      // appearance={{
-      //   baseTheme: dark,
-      // }}
+      appearance={{
+        baseTheme: dark,
+      }}
     >
       <html lang="en" suppressHydrationWarning>
         <head>
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
 
             <footer className="bg-muted/50 py-12">
               <div className="container mx-auto px-4 text-center text-gray-200">
-                <p>Made with ♥ by team aether¬_¬</p>
+                <p>Made with 💗 by RoadsideCoder</p>
               </div>
             </footer>
           </ThemeProvider>

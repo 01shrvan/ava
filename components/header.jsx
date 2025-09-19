@@ -17,10 +17,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
-// import { checkUser } from "@/lib/checkUser";
+import { checkUser } from "@/lib/checkUser";
 
 export default async function Header() {
-  // await checkUser();
+  await checkUser();
 
   return (
     <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
@@ -35,6 +35,7 @@ export default async function Header() {
           />
         </Link>
 
+        {/* Action Buttons */}
         <div className="flex items-center space-x-2 md:space-x-4">
           <SignedIn>
             <Link href="/dashboard">
@@ -50,6 +51,7 @@ export default async function Header() {
               </Button>
             </Link>
 
+            {/* Growth Tools Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button className="flex items-center gap-2">
