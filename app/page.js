@@ -27,7 +27,6 @@ export default function LandingPage() {
     <>
       <div className="grid-background"></div>
 
-      {/* Hero Section */}
       <HeroSection />
 
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
