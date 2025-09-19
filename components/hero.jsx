@@ -27,23 +27,21 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="w-full pt-36 md:pt-48 pb-10">
+    <section className="w-full pt-12 md:pt-23 pb-10">
       <div className="space-y-6 text-center">
         <div className="space-y-6 mx-auto">
           <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title animate-gradient">
-            Your AI Career Coach for
-            <br />
-            Professional Success
+            confused about career or courses? <br /> we got you
           </h1>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
-            Advance your career with personalized guidance, interview prep, and
-            AI-powered tools for job success.
+            your ai buddy helps you figure out the right path after school or
+            college. no more stress, just clear steps made for you.
           </p>
         </div>
         <div className="flex justify-center space-x-4">
           <Link href="/dashboard">
             <Button size="lg" className="px-8">
-              Get Started
+              start now
             </Button>
           </Link>
         </div>
@@ -53,7 +51,7 @@ const HeroSection = () => {
               src="/banner.jpeg"
               width={1280}
               height={720}
-              alt="Dashboard Preview"
+              alt="app preview"
               className="rounded-lg shadow-2xl border mx-auto"
               priority
             />
@@ -62,6 +60,7 @@ const HeroSection = () => {
       </div>
     </section>
   );
+
 };
 
 export default HeroSection;

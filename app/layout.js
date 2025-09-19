@@ -35,11 +35,21 @@ export default function RootLayout({ children }) {
             <main className="min-h-screen">{children}</main>
             <Toaster richColors />
 
-            <footer className="bg-muted/50 py-6">
-              <div className="container mx-auto px-4 text-center text-gray-200">
-                <p>Made with ♥️ by team aether {'>.<'} </p>
+            <footer className="bg-muted/50 py-6 border-t">
+              <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-300">
+                {/* Left side - Quote */}
+                <p className="mb-4 md:mb-0 italic text-muted-foreground">
+                  “the future belongs to those who learn, unlearn & relearn.”
+                </p>
+
+                {/* Right side - Branding */}
+                <p className="flex items-center gap-2">
+                  made with <span className="text-red-500">♥️</span> by
+                  <span className="font-semibold text-gray-100">team aether {'>.<'}</span>
+                </p>
               </div>
             </footer>
+
           </ThemeProvider>
         </body>
       </html>

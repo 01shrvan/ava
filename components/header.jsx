@@ -22,13 +22,14 @@ export default async function Header() {
   await checkUser();
 
   return (
-    <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
-      <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <header className="sticky top-4 z-50">
+      <nav className="mx-auto w-[95%] md:w-[85%] lg:w-[95%] rounded-xl border bg-background/80 backdrop-blur-md shadow-lg supports-[backdrop-filter]:bg-background/60 px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <span className="text-3xl font-bold tracking-tight  text-primary py-1">ava</span>
+          <span className="text-3xl font-bold tracking-tight text-primary py-1">
+            ava
+          </span>
         </Link>
 
-        {/* Action Buttons */}
         <div className="flex items-center space-x-2 md:space-x-4">
           <SignedIn>
             <Link href="/dashboard">
@@ -37,19 +38,19 @@ export default async function Header() {
                 className="hidden md:inline-flex items-center gap-2"
               >
                 <LayoutDashboard className="h-4 w-4" />
-                Industry Insights
+                industry insights
               </Button>
               <Button variant="ghost" className="md:hidden w-10 h-10 p-0">
                 <LayoutDashboard className="h-4 w-4" />
               </Button>
             </Link>
 
-            {/* Growth Tools Dropdown */}
+            {/* growth tools dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button className="flex items-center gap-2">
+                <Button className="flex items-center gap-2 rounded-full">
                   <StarsIcon className="h-4 w-4" />
-                  <span className="hidden md:block">Growth Tools</span>
+                  <span className="hidden md:block">growth tools</span>
                   <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -57,7 +58,7 @@ export default async function Header() {
                 <DropdownMenuItem asChild>
                   <Link href="/resume" className="flex items-center gap-2">
                     <FileText className="h-4 w-4" />
-                    Build Resume
+                    build resume
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -66,13 +67,13 @@ export default async function Header() {
                     className="flex items-center gap-2"
                   >
                     <PenBox className="h-4 w-4" />
-                    Cover Letter
+                    cover letter
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/interview" className="flex items-center gap-2">
                     <GraduationCap className="h-4 w-4" />
-                    Interview Prep
+                    interview prep
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -81,7 +82,7 @@ export default async function Header() {
 
           <SignedOut>
             <SignInButton>
-              <Button variant="outline">Sign In</Button>
+              <Button variant="outline">sign in</Button>
             </SignInButton>
           </SignedOut>
 
@@ -102,3 +103,4 @@ export default async function Header() {
     </header>
   );
 }
+
