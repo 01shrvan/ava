@@ -9,8 +9,8 @@ import { dark } from "@clerk/themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AI Career Coach",
-  description: "",
+  title: "ava- your ai career coach",
+  description: "your ai buddy for career clarity and growth",
 };
 
 export default function RootLayout({ children }) {
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <head>
           <link rel="icon" href="/logo.png" sizes="any" />
         </head>
-        <body className={`${inter.className}`}>
+        <body className={`${inter.className} antialiased`}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -33,20 +33,19 @@ export default function RootLayout({ children }) {
           >
             <Header />
             <main className="min-h-screen">{children}</main>
-            <Toaster richColors />
+            <Toaster richColors position="bottom-right" />
 
-            <footer className="bg-muted/50 py-6 border-t">
-              <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-300">
-                {/* Left side - Quote */}
-                <p className="mb-4 md:mb-0 italic text-muted-foreground">
-                  “the future belongs to those who learn, unlearn & relearn.”
-                </p>
-
-                {/* Right side - Branding */}
-                <p className="flex items-center gap-2">
-                  made with <span className="text-red-500">♥️</span> by
-                  <span className="font-semibold text-gray-100">team aether {'>.<'}</span>
-                </p>
+            <footer className="border-t border-border/40 py-8 mt-20">
+              <div className="container mx-auto px-6 max-w-6xl">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                  <p className="text-sm text-muted-foreground font-light italic">
+                    the future belongs to those who learn, unlearn & relearn.
+                  </p>
+                  <p className="text-sm text-muted-foreground flex items-center gap-2">
+                    made with <span className="text-red-400 animate-pulse">♥</span> by
+                    <span className="font-medium text-foreground">team aether</span>
+                  </p>
+                </div>
               </div>
             </footer>
 
