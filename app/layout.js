@@ -39,11 +39,11 @@ export default function RootLayout({ children }) {
               <div className="container mx-auto px-6 max-w-6xl">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                   <p className="text-sm text-muted-foreground font-light italic">
-                    the future belongs to those who learn, unlearn & relearn.
+                    The future belongs to those who learn, unlearn & relearn.
                   </p>
                   <p className="text-sm text-muted-foreground flex items-center gap-2">
-                    made with <span className="text-red-400 animate-pulse">♥</span> by
-                    <span className="font-medium text-foreground">team aether</span>
+                    Made with <span className="text-red-400 animate-pulse">♥</span> by
+                    <span className="font-medium text-foreground">Team aether</span>
                   </p>
                 </div>
               </div>

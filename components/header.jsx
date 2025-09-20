@@ -88,7 +88,7 @@ export default async function Header() {
 
           <SignedOut>
             <SignInButton>
-              <Button variant="outline">sign in</Button>
+              <Button variant="outline">Sign in</Button>
             </SignInButton>
           </SignedOut>
 

@@ -105,12 +105,12 @@ const HeroSection = () => {
 
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              confused about{" "}
+              Confused about{" "}
               <span className="bg-gradient-to-r from-primary via-primary to-primary/60 bg-clip-text text-transparent">
-                career or courses?
+                Career or courses?
               </span>
               <br />
-              we got you
+              We got you
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -125,7 +125,7 @@ const HeroSection = () => {
                 size="sm"
                 className="h-10 px-6 text-base font-medium bg-primary hover:bg-primary/90 group shadow-lg hover:shadow-xl transition-all duration-300 w-full md:w-auto"
               >
-                get started
+                Get started
               </Button>
             </Link>
             <span className="mx-2 hidden md:inline-block" /> {/* Spacer for desktop */}
@@ -139,7 +139,7 @@ const HeroSection = () => {
                 size="sm"
                 className="h-10 px-6 text-base font-medium w-full md:w-auto"
               >
-                ask ava
+                Ask ava
               </Button>
             </Link>
           </div>
